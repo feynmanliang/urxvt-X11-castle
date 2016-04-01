@@ -1,0 +1,53 @@
+#include "/home/fliang/.colors/tomorrow-night"
+
+Xcursor.theme: Vanilla-DMZ-AA
+
+! Font smoothing ---------------
+Xft.dpi:       96
+Xft.antialias: 1
+Xft.autohint:  1
+Xft.rgba:      rgb
+Xft.hinting:   1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+
+
+! URxvt ----------------
+URxvt*font:            xft:Menlo:size=8,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*boldFont:        xft:Menlo:style=Bold:size=8,xft:Inconsolata\ for\ Powerline:pixelsize=12
+!URxvt*font:            xft:Consolas:regular:size=10,xft:Inconsolata\ for\ Powerline:pixelsize=12
+!URxvt*boldFont:        xft:Consolas:bold:size=10,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*.matcher.rend.0: Uline Bold fg8
+URxvt*iso14755:        false
+URxvt*urgentOnBell:    true
+URxvt*saveLines:       12000
+URxvt*geometry:        80x20
+URxvt*scrollBar:       false
+URxvt*.background:     [90]#000000
+URxvt*.foreground:     t_comment
+URxvt*.depth:          32
+URxvt*cursorColor:     t_comment
+URxvt*cursorColor2:    #555555
+!URxvt*transparent:     true
+!URxvt*shading:         85
+!URxvt.perl-ext-common: default,clipboard,font
+!URxvt.keysym.M-c:      perl:clipboard:copy
+!URxvt.keysym.M-v:      perl:clipboard:paste
+!URxvt.keysym.M-C-v:    perl:clipboard:paste_escaped
+!URxvt.matcher.button:  1
+
+! URxvt font size using Ctrl+Shift+(<Up>|<Down>)
+URxvt.keysym.Control-Shift-Up:      perl:font:increment
+URxvt.keysym.Control-Shift-Down:    perl:font:decrement
+URxvt.perl-ext-common:              default,tabbed,matcher,resize-font,-tabbed
+!URxvt.perl-ext-common:              default,clipboard,resize-font
+
+! dzen2 --------------
+dzen2.font:     terminus:pixelsize=12:antialias=false:hinting=none
+dzen2.boldFont: terminus:bold:pixelsize=12:antialias=false:hinting=none
+
+! Mathematica ---------
+Mathematica*background: #969896
+Mathematica*foreground: #1d1f21
+
+
