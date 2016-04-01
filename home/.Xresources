@@ -11,7 +11,6 @@ Xft.hinting:   1
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
-
 ! URxvt ----------------
 URxvt*font:            xft:Menlo:size=8,xft:Inconsolata\ for\ Powerline:pixelsize=12
 URxvt*boldFont:        xft:Menlo:style=Bold:size=8,xft:Inconsolata\ for\ Powerline:pixelsize=12
@@ -30,17 +29,17 @@ URxvt*cursorColor:     t_comment
 URxvt*cursorColor2:    #555555
 !URxvt*transparent:     true
 !URxvt*shading:         85
-!URxvt.perl-ext-common: default,clipboard,font
-!URxvt.keysym.M-c:      perl:clipboard:copy
-!URxvt.keysym.M-v:      perl:clipboard:paste
-!URxvt.keysym.M-C-v:    perl:clipboard:paste_escaped
-!URxvt.matcher.button:  1
 
-! URxvt font size using Ctrl+Shift+(<Up>|<Down>)
-URxvt.keysym.Control-Shift-Up:      perl:font:increment
-URxvt.keysym.Control-Shift-Down:    perl:font:decrement
-URxvt.perl-ext-common:              default,tabbed,matcher,resize-font,-tabbed
-!URxvt.perl-ext-common:              default,clipboard,resize-font
+! URxvt extensions
+! matcher: clickable URLs
+! selection-to-clipboard: URxvt selection is copied to X11 clipboard
+! resize-font: uses ~/.urxvt/ext/resize-font to resize font with <Ctrl>+(+|-|=)
+URxvt.perl-ext-common:              default,matcher,selection-to-clipboard,resize-font
+
+! URxvt clickable URLs (matcher)
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button:  1
+URxvt.matcher.rend.0: Uline Bold fg5
 
 ! dzen2 --------------
 dzen2.font:     terminus:pixelsize=12:antialias=false:hinting=none
