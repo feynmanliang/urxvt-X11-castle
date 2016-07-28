@@ -84,6 +84,3 @@ blueman-applet &
 
 # rescuetime - time tracking
 rescuetime &
-
-# start i3
-exec i3
