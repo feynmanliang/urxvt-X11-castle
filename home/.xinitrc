@@ -11,14 +11,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-# ensure arch JRE loaded
+# load arch JRE
 source /etc/profile.d/jre.sh
 
 # .Xresources
 xrdb -load ~/.Xresources &
 
 # screen resolution
-./.screenlayout/ViewSonicExternal.sh
+./.screenlayout/External1080p.sh &
 
 # samsung tools session service
 /usr/share/samsung-tools/session-service.py &
@@ -37,17 +37,14 @@ export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 # urxvt daemon
 urxvtd -q -o -f &
 
-# swap caps lock and esc
-xmodmap ~/.speedswapper &
+# swap caps lock and esc, speed up key repeat
+~/bin/Speedswapper.sh &
 
 # laptop fn keys
 xbindkeys &
 
 # set the cursor
 xsetroot -cursor_name left_ptr &
-
-# hide inactive cursor
-hhp &
 
 # automount devices
 devmon &
@@ -61,10 +58,6 @@ compton --config ~/.compton.conf -b
 # music
 mpd ~/.mpdconf &
 
-# icon tray
-trayer --edge top --align right --SetDockType true --SetPartialStrut true \
-  --expand true --width 11 --transparent true --alpha 1 --tint 0x1B1D1E --height 24 &
-
 # battery
 cbatticon &
 
@@ -75,7 +68,6 @@ dropbox &
 nm-applet --sm-disable &
 
 # wallpaper
-# sh ~/.fehbg &
 sh ~/bin/wallpaper.sh
 
 # screen dimming
@@ -87,8 +79,11 @@ pasystray &
 # update dynamic dns
 afraid-dyndns-uv &
 
-# key repeat speed
-xset r rate 180 40
+# bluetooth
+blueman-applet &
 
-# start xmonad (dzen2 included)
-exec xmonad
+# rescuetime - time tracking
+rescuetime &
+
+# start i3
+exec i3
