@@ -3,19 +3,17 @@
 Xcursor.theme: Vanilla-DMZ-AA
 
 ! Font smoothing ---------------
-Xft.dpi:       96
-Xft.antialias: 1
-Xft.autohint:  1
-Xft.rgba:      rgb
-Xft.hinting:   1
-Xft.hintstyle: hintfull
+Xft.dpi:       163
+Xft.autohint:  0
 Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting:   1
+Xft.antialias: 1
+Xft.rgba:      rgb
 
 ! URxvt ----------------
-URxvt*font:            xft:Menlo:size=8,xft:Inconsolata\ for\ Powerline:pixelsize=12
-URxvt*boldFont:        xft:Menlo:style=Bold:size=8,xft:Inconsolata\ for\ Powerline:pixelsize=12
-!URxvt*font:            xft:Consolas:regular:size=10,xft:Inconsolata\ for\ Powerline:pixelsize=12
-!URxvt*boldFont:        xft:Consolas:bold:size=10,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*font:            xft:Ubuntu\ Mono\ derivative\ Powerline:size=8
+URxvt*boldFont:        xft:Ubuntu\ Mono\ derivative\ Powerline:style=Bold:size=8
 URxvt*.matcher.rend.0: Uline Bold fg8
 URxvt*iso14755:        false
 URxvt*urgentOnBell:    true

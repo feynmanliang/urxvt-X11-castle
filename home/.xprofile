@@ -23,9 +23,6 @@ xrdb -load ~/.Xresources &
 # samsung tools session service
 /usr/share/samsung-tools/session-service.py &
 
-# urxvt daemon
-urxvtd -q -o -f &
-
 # swap caps lock and esc, speed up key repeat
 ~/bin/Speedswapper.sh &
 
@@ -73,3 +70,7 @@ blueman-applet &
 
 # rescuetime - time tracking
 rescuetime &
+
+# urxvt daemon
+urxvtd -q -o -f &
+
