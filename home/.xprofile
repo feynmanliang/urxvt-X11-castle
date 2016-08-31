@@ -45,7 +45,7 @@ compton &
 mpd ~/.mpdconf &
 
 # battery
-cbatticon &
+batterymon &
 
 # Dropbox
 dropbox &
