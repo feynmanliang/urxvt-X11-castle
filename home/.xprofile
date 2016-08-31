@@ -39,7 +39,7 @@ devmon &
 /usr/bin/xscreensaver -no-splash &
 
 # compositing
-# compton --config ~/.compton.conf -b
+compton &
 
 # music
 mpd ~/.mpdconf &
