@@ -144,7 +144,8 @@ bar {
 }
 
 # lock screen
-bindsym $mod+Ctrl+Shift+l exec "dm-tool lock"
+#bindsym $mod+Ctrl+Shift+l exec "dm-tool lock"
+bindsym $mod+Ctrl+Shift+l exec "i3lock-fancy -g -p"
 
 # screenshot
 bindsym Print exec "scrot -e 'mv $f ~/screenshots'"
@@ -154,4 +155,4 @@ gaps outer 0
 # no border only if gaps at edge of screen is 0
 smart_borders no_gaps
 # set borders to 1px if in split container (disable title bar)
-new_window pixel 3px
+new_window pixel 2px

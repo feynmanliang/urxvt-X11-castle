@@ -29,6 +29,9 @@ xrdb -load ~/.Xresources &
 # laptop fn keys
 xbindkeys &
 
+# keyboard repeat rate
+xset r rate 200 40
+
 # set the cursor
 xsetroot -cursor_name left_ptr &
 
@@ -43,6 +46,9 @@ compton &
 
 # music
 mpd ~/.mpdconf &
+
+# volume notifications
+volnoti &
 
 # battery
 batterymon &

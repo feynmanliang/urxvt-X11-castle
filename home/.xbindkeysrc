@@ -1,12 +1,12 @@
-# xbacklight and kbdlight (AUR) needed
+# gmux_backlight, volnoti (AUR), and kbdlight (AUR) needed
 
-"amixer set Master playback 5%+"
+"amixer set Master playback 5%+ && amixer get Master | egrep -o "([0-9]+)%" | egrep -o "[0-9]+" | xargs -0 volnoti-show"
     XF86AudioRaiseVolume
 
-"amixer set Master playback 5%-"
+"amixer set Master playback 5%- && amixer get Master | egrep -o "([0-9]+)%" | egrep -o "[0-9]+" | xargs -0 volnoti-show"
     XF86AudioLowerVolume
 
-"amixer set Master toggle"
+"amixer set Master toggle; if [[ -n $(amixer get Master | grep -o "\[off\]") ]] ; then volnoti-show -m -v; else amixer get Master | egrep -o "([0-9]+)%" | egrep -o "[0-9]+" | xargs -0 volnoti-show; fi"
     XF86AudioMute
 
 "gmux_backlight -10"
