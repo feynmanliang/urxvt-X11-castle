@@ -12,16 +12,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # # load arch JRE
-# source /etc/profile.d/jre.sh
+source /etc/profile.d/jre.sh
 
 # .Xresources
 xrdb -load ~/.Xresources &
 
 # screen resolution
-./.screenlayout/External1080p.sh &
-
-# samsung tools session service
-/usr/share/samsung-tools/session-service.py &
+# ./.screenlayout/External1080p.sh &
 
 # swap caps lock and esc, speed up key repeat
 ~/bin/Speedswapper.sh &
@@ -44,9 +41,6 @@ devmon &
 # compositing
 compton &
 
-# music
-mpd ~/.mpdconf &
-
 # volume notifications
 volnoti &
 
@@ -55,9 +49,6 @@ batterymon &
 
 # Dropbox
 dropbox &
-
-# network manager
-nm-applet --sm-disable &
 
 # wallpaper
 sh ~/bin/wallpaper.sh
@@ -68,15 +59,7 @@ redshiftgui &
 # pulseaudio system tray
 pasystray &
 
-# update dynamic dns
-afraid-dyndns-uv &
-
-# bluetooth
-blueman-applet &
-
-# rescuetime - time tracking
-rescuetime &
-
 # urxvt daemon
-urxvtd -q -o -f &
+# urxvtd -q -o -f &
 
+exec $1
