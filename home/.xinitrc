@@ -11,8 +11,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-# # load arch JRE
-source /etc/profile.d/jre.sh
+# load arch JRE
+# source /etc/profile.d/jre.sh
 
 # .Xresources
 xrdb -load ~/.Xresources &
@@ -39,13 +39,10 @@ devmon &
 /usr/bin/xscreensaver -no-splash &
 
 # compositing
-compton &
+# compton &
 
 # volume notifications
 volnoti &
-
-# battery
-batterymon &
 
 # Dropbox
 dropbox &
@@ -54,12 +51,14 @@ dropbox &
 sh ~/bin/wallpaper.sh
 
 # screen dimming
-redshiftgui &
+redshift-gtk &
 
 # pulseaudio system tray
 pasystray &
 
 # urxvt daemon
 # urxvtd -q -o -f &
+
+export PATH=~/.local/bin:~/bin:$PATH
 
 exec $1
