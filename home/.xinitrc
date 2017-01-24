@@ -39,7 +39,7 @@ devmon &
 /usr/bin/xscreensaver -no-splash &
 
 # compositing
-# compton &
+compton &
 
 # volume notifications
 volnoti &
