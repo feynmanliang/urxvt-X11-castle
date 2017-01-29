@@ -11,10 +11,10 @@
 #define t_aqua #8abeb7
 #define t_blue #81a2be
 #define t_purple #b294bb
- 
+
 ! terminal colours
-! *background: t_background
-! *foreground: t_comment
+*background: t_background
+*foreground: t_comment
 ! black
 *color0: t_current_line
 *color8: t_selection
