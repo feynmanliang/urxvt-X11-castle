@@ -59,6 +59,6 @@ pasystray &
 # urxvt daemon
 # urxvtd -q -o -f &
 
-export PATH=~/.local/bin:~/bin:$PATH
+source ~/.profile
 
 exec $1
