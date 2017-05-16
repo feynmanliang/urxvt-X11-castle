@@ -56,6 +56,9 @@ redshift-gtk &
 # pulseaudio system tray
 pasystray &
 
+# screencloud
+screencloud &
+
 # urxvt daemon
 # urxvtd -q -o -f &
 
