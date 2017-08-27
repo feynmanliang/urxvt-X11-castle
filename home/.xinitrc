@@ -20,7 +20,7 @@ xrdb -load ~/.Xresources &
 # screen resolution
 # ./.screenlayout/External1080p.sh &
 
-# swap caps lock and esc, speed up key repeat
+# swap caps lock and esc
 ~/bin/Speedswapper.sh &
 
 # laptop fn keys
@@ -33,10 +33,10 @@ xset r rate 200 40
 xsetroot -cursor_name left_ptr &
 
 # automount devices
-devmon &
+# devmon &
 
 # screensaver
-/usr/bin/xscreensaver -no-splash &
+# /usr/bin/xscreensaver -no-splash &
 
 # compositing
 compton &
