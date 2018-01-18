@@ -5,7 +5,7 @@ Xcursor.theme: Vanilla-DMZ-AA
 ! Font smoothing ---------------
 Xft.antialias:  1
 Xft.autohint:   0
-Xft.dpi:        192
+Xft.dpi:        120
 Xft.hinting:    1
 Xft.hintstyle:  hintfull
 Xft.lcdfilter:  lcddefault
@@ -47,4 +47,11 @@ dzen2.boldFont: terminus:bold:pixelsize=12:antialias=false:hinting=none
 Mathematica*background: #969896
 Mathematica*foreground: #1d1f21
 
-
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #393939, #393939, #268bd2
+rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
+rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
+rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
