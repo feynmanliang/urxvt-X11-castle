@@ -4,13 +4,18 @@ DefaultProfile=Profile.profile
 [Favorite Profiles]
 Favorites=
 
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/-.txt,file:$HOME/-.txt
+
 [KonsoleWindow]
 ShowMenuBarByDefault=false
 
 [MainWindow]
+Height 960=904
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAC0AAAAaeAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA1UAAAOoAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+Width 1707=829
 
 [PrintOptions]
 PrinterFriendly=true

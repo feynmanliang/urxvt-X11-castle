@@ -20,14 +20,11 @@ xrdb -load ~/.Xresources &
 # screen resolution
 # ./.screenlayout/External1080p.sh &
 
-# swap caps lock and esc
+# remap caps lock -> control, fast key repeat
 ~/bin/Speedswapper.sh &
 
 # laptop fn keys
-xbindkeys &
-
-# keyboard repeat rate
-xset r rate 200 40
+# xbindkeys &
 
 # set the cursor
 xsetroot -cursor_name left_ptr &
@@ -39,13 +36,13 @@ xsetroot -cursor_name left_ptr &
 # /usr/bin/xscreensaver -no-splash &
 
 # compositing
-compton &
+# compton -fcCFb --backend glx --vsync opengl
 
 # volume notifications
-volnoti &
+# volnoti &
 
 # Dropbox
-dropbox &
+# dropbox &
 
 # wallpaper
 sh ~/bin/wallpaper.sh
